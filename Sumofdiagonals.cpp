@@ -7,7 +7,7 @@ int main()
     for(r=0;r<3;++r)
         for(c=0;c<3;++c)
             cout<<"a["<<r<<"]["<<c<<"]="<<*(p+(r*3)+c)<<"\n";
-    for(i=0;i<a;i++)
+    for(i=0;i<3;i++)
     {
         p=&a[i];
         s+=*(p+m);
