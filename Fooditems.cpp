@@ -11,27 +11,27 @@ int main()
 		cin>>c;
         switch(c)
         {
-		    case 1:
+		case 1:
                 fi="Pizza";
                 p=239,i=1;
                 break;
-            case 2:
+		case 2:
                 fi="Pasta";
                 p=179,i=1;
                 break;
-            case 3:
+            	case 3:
                 fi="Burger";
                 p=129,i=1;
                 break;
-            case 4:
+            	case 4:
                 fi="Sandwich";
                 p=149,i=1;
                 break;
-            case 5:
+            	case 5:
                 fi="French Fries";
                 p=99,i=1;
                 break;
-            default:
+            	default:
                 cout<<"Please Enter A Valid Choice 1-5\n";
         }
 		if(i==1)
