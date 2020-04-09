@@ -2,13 +2,16 @@
 using namespace std;
 int main()
 {
-    do
+    int c,p,i;
+    string fi;
+	do
     {
-        int c,p,i=0;
-        string fi;
-        cin>>c;
+        i=0;
+        cout<<"Please Enter Your Choice\t";
+		cin>>c;
         switch(c)
-            case 1:
+        {
+		    case 1:
                 fi="Pizza";
                 p=239,i=1;
                 break;
@@ -30,7 +33,8 @@ int main()
                 break;
             default:
                 cout<<"Please Enter A Valid Choice 1-5\n";
-        if(i==1)
+        }
+		if(i==1)
             cout<<"Food item - "<<fi<<"\nPrice - Rs "<<p;
     }while(!(c>0 && c<6));
 }             
