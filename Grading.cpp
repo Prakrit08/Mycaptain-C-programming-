@@ -20,3 +20,4 @@ int main()
     else
       cout<<"Please enter marks in range 0-100";
   }while(m>=0 && m<=100);
+}
