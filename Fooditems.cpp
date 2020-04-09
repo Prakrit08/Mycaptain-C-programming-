@@ -9,23 +9,23 @@ int main()
         cin>>c;
         switch(c)
             case 1:
-                fi="Pizza"
+                fi="Pizza";
                 p=239,i=1;
                 break;
             case 2:
-                fi="Pasta"
+                fi="Pasta";
                 p=179,i=1;
                 break;
             case 3:
-                fi="Burger"
+                fi="Burger";
                 p=129,i=1;
                 break;
             case 4:
-                fi="Sandwich"
+                fi="Sandwich";
                 p=149,i=1;
                 break;
             case 5:
-                fi="French Fries"
+                fi="French Fries";
                 p=99,i=1;
                 break;
             default:
