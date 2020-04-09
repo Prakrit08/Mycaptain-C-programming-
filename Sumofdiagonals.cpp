@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 int main()
 {
     int a[3][3]={{9,6,1},{144,70,50},{10,12,78}};
