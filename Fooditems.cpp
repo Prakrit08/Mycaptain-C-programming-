@@ -33,4 +33,4 @@ int main()
         if(i==1)
             cout<<"Food item - "<<fi<<"\nPrice - Rs "<<p;
     }while(!(c>0 && c<6));
-                
+}             
