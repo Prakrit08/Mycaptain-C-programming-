@@ -12,4 +12,5 @@ int main()
         p=&a[i][i];
         s+=*(p);
     }
+    cout<<"Sum of the diagonal elements is "<<s;
 }
