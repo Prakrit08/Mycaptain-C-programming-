@@ -10,7 +10,7 @@ int PRIME(int n)
 	else
 	{
 		i+=1;
-		return PRIME;
+		return PRIME(n);
 	}
 }
 int main()
