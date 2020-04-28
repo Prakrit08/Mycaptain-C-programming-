@@ -29,7 +29,8 @@ int main()
             cnt--;
         }
         printf("\n**File copied successfully in reverse order**\n");
-    else
+	}
+	else
         perror("Error occured\n");
     fclose(fp1);
     fclose(fp2);
