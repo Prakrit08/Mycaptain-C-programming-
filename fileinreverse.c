@@ -4,9 +4,12 @@ int main()
 {
     FILE *fp1;
     int cnt=0,i=0;
-    fp1 = fopen("<Enter file name>","r");
-    if( fp1 == NULL )
-        printf("\nFile can not be opened !! \n");
+    char fn[100];
+    printf("Enter filename with .txt extension: ");
+    scanf("%s",fn);
+    fp1 = fopen(fn,"r");
+    if(fp1==NULL )
+        printf("File can not be opened !! \n");
     fseek(fp1,0,SEEK_END);
     cnt = ftell(fp1);
     while( i < cnt )
