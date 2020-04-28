@@ -1,24 +1,36 @@
-#include <stdio.h>
-#include <string.h>
-int main(int argc, char *argv[])
+#include<stdio.h>
+#include<errno.h>
+long count_characters(FILE *f)
 {
-    FILE *fp1;
-    int cnt=0,i=0;     
-    if(argc<2)
+    fseek(f, -1L, 2);
+    long last_pos = ftell(f);
+    last_pos++;
+    return last_pos;
+}
+int main()
+{
+    int i;
+    long cnt;
+    char ch, ch1,fn[100];
+    FILE *fp1, *fp2;
+	scanf("%s",fn);
+	if (fp1 = fopen(fn,"r"))
     {
-        printf("Insufficient Arguments!!!\n");
-        printf("Please use \"program-name file-name\" format.\n");
-	}
-    fp1=fopen(argv[1],"r");
-    if(fp1==NULL)
-        printf("\n%s File can not be opened : \n",argv[1]);
-    fseek(fp1,0,SEEK_END);
-    cnt=ftell(fp1);
-    while(i<cnt)
-    {
-        i++;
-        fseek(fp1,-i,SEEK_END);
-        printf("%c",fgetc(fp1));
-    }
+        printf("The FILE has been opened...\n");
+        fp2 = fopen("File_2.txt", "w");
+        cnt = count_characters(fp1);
+        fseek(fp1, -1L, 2);
+        printf("Number of characters to be copied %d\n", ftell(fp1));
+		while (cnt)
+        {
+            ch = fgetc(fp1);
+            fputc(ch, fp2);
+            fseek(fp1, -2L, 1); // shifts the pointer to the previous character
+            cnt--;
+        }
+        printf("\n**File copied successfully in reverse order**\n");
+    else
+        perror("Error occured\n");
     fclose(fp1);
+    fclose(fp2);
 }
