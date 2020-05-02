@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-	printf("Size of char: %d byte\n",sizeof(char));
-	printf("Size of int: %d bytes\n",sizeof(int));
-	printf("Size of float: %d bytes\n",sizeof(float));
-	printf("Size of double: %d bytes\n",sizeof(double));
+	cout<<"Size of char: "<<sizeof(char)<<" byte\n";
+	cout<<"Size of int: "<<sizeof(int)<<"bytes\n";
+	cout<<"Size of float: "<<sizeof(float)<<"bytes\n";
+	cout<<"Size of double: "<<sizeof(double)<<"bytes\n";
 }
